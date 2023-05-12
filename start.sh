@@ -9,4 +9,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 # # Pull the freqtrade image
 docker-compose pull
+docker-compose run --rm freqtrade create-userdir --userdir user_data
+cp SMAOffSetStrategy.py user_data/strategies/
 # docker compose up -d
